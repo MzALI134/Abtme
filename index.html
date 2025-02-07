@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xlCyk0lx - About me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #0EA5E9;
+            --primary: #4F46E5;
+            --primary-light: #818CF8;
             --bg: #0F172A;
             --text: #E2E8F0;
             --surface: #1E293B;
+            --gradient: linear-gradient(135deg, #4F46E5, #818CF8);
         }
 
         * {
@@ -19,54 +22,74 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
             padding: 2rem;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background: var(--surface);
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         }
 
         h1 {
-            font-size: 2.5rem;
-            color: var(--primary);
+            font-size: 3rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 1rem;
         }
 
-        .intro {
+        section {
             background: var(--surface);
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 1rem;
             margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
         }
 
-        .skills {
-            background: var(--surface);
-            padding: 2rem;
-            border-radius: 1rem;
-            margin-bottom: 2rem;
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-item p {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         .skill-bar {
             background: #2D3748;
             height: 25px;
             border-radius: 12px;
-            margin: 1rem 0;
             overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .skill-progress {
             height: 100%;
-            background: var(--primary);
+            background: var(--gradient);
             display: flex;
             align-items: center;
             padding: 0 1rem;
@@ -75,15 +98,22 @@
             transition: width 1s ease-in-out;
         }
 
-        .passion {
-            background: var(--surface);
-            padding: 2rem;
-            border-radius: 1rem;
+        .highlight {
+            color: var(--primary-light);
+            font-weight: bold;
         }
 
-        .highlight {
-            color: var(--primary);
-            font-weight: bold;
+        .intro p, .passion p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .server-highlight {
+            display: inline-block;
+            background: var(--gradient);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
         }
     </style>
 </head>
@@ -91,64 +121,64 @@
     <div class="container">
         <header>
             <h1>xlCyk0lx</h1>
-            <p>A Developer</p>
+            <p>Full Stack Developer & Minecraft Server Developer</p>
         </header>
 
         <section class="intro">
             <h2>About Me</h2>
-            <p>I'm a developer with 5 years of experience. I started learning JavaScript and have since worked with many other programming languages and technologies.</p>
-            <p>I Also have a hobby of creating minecraft servers like my minecraft server like my server Dupe4lifes.org </p>
+            <p>I'm a passionate developer with 4 years of dedicated experience in software development. My journey has led me through various programming languages and technologies, constantly expanding my skill set.</p>
+            <p>One of my proudest achievements is creating and managing my own Minecraft server: <span class="server-highlight">Dupe4lifes.org</span></p>
         </section>
 
         <section class="skills">
             <h2>Technical Skills</h2>
             
             <div class="skill-item">
+                <p>PHP</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%">4 years</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
                 <p>JavaScript</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%">3 years</div>
+                    <div class="skill-progress" style="width: 75%">3 years</div>
                 </div>
             </div>
 
             <div class="skill-item">
                 <p>Python</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 80%">2.5 years</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <p>PHP</p>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 70%">4 years</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <p>HTML</p>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 70%">1.5 years</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <p>Skript</p>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 70%">1 year</div>
+                    <div class="skill-progress" style="width: 65%">2.5 years</div>
                 </div>
             </div>
 
             <div class="skill-item">
                 <p>Java</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 40%">2 years</div>
+                    <div class="skill-progress" style="width: 50%">2 years</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p>HTML</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 40%">1.5 years</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p>Skript</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 30%">1 year</div>
                 </div>
             </div>
 
             <div class="skill-item">
                 <p>C#</p>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 20%">1 year</div>
+                    <div class="skill-progress" style="width: 25%">1 year</div>
                 </div>
             </div>
 
@@ -161,10 +191,10 @@
         </section>
 
         <section class="passion">
-            <h2>My Journey & Dreams</h2>
-            <p>My coding journey began on <span class="highlight">Scratch</span>, where I created my first games. Through YouTube tutorials and self-learning, I've continuously expanded my programming knowledge. Currently, I'm enhancing my skills with formal education while maintaining my self-taught approach.</p>
-            <br>
-            <p>My ultimate dream is to work at <span class="highlight">Mojang</span>, and I'm dedicated to pursuing a degree in computer science to make this dream a reality. As of February 2024, I'm preparing for my next milestone while continuing to learn and grow as a developer.</p>
+            <h2>My Journey & Goals</h2>
+            <p>Starting with <span class="highlight">Scratch</span>, I quickly advanced to more complex programming languages. Through dedication and continuous learning, I've developed a strong foundation in full-stack development.</p>
+            <p>My experience with Minecraft server development has taught me valuable lessons in server management, user experience, and community building.</p>
+            <p>Aspiring to work at <span class="highlight">Mojang</span>, I'm pursuing further education in computer science while actively working on personal projects and expanding my technical expertise.</p>
         </section>
     </div>
 </body>
